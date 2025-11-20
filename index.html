@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>会议室状态看板</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="app-header">
+        <div class="titles">
+          <h1 class="app-title">会议室状态看板</h1>
+          <p class="app-subtitle">实时会议状态 · 议题进展 · 会议安排</p>
+        </div>
+        <div class="now">
+          <div class="now-time" id="now-time">--:--</div>
+          <div class="now-date" id="now-date">--</div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="切换主题" title="切换主题"></button>
+        </div>
+      </header>
+
+      <main class="rooms-grid" id="rooms"></main>
+
+      <footer class="app-footer">
+        <span>建议使用全屏展示，信息每分钟自动刷新。</span>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
+
